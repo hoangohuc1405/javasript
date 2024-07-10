@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai4</title>
+</head>
+
+<body>
+    <input type="text" name="" id="a" placeholder="Nhap a">
+    <input type="text" name="" id="b" placeholder="Nhap b">
+    <button onclick="layDuLieu()">Ket qua</button>
+    <p id="result"></p>
+</body>
+<script>
+    function layDuLieu() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let tong = a + b;
+        document.getElementById("result").innerHTML = `Tong la: ${tong}`;
+        document.write(`Tong la: ${tong}`);
+        alert(`Tong la: ${tong}`);
+    }
+</script>
+
+</html>
